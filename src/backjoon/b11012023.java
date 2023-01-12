@@ -3,7 +3,7 @@ package backjoon;
 import java.io.*;
 import java.util.*;
 
-//타이머신
+//타임머신
 //11012023
 
 public class b11012023 {
