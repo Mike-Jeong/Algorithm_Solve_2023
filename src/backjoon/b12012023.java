@@ -9,12 +9,12 @@ import java.util.*;
 public class b12012023 {
 
     private static int minVal = 987654321;
-    
+
     public static void main(String args[]) throws Exception {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
-        
+
         int v = Integer.parseInt(st.nextToken());
         int e = Integer.parseInt(st.nextToken());
 
