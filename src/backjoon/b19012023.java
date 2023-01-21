@@ -3,7 +3,7 @@ package backjoon;
 import java.io.*;
 import java.util.*;
 
-//미팅
+//미팅 (쇼미 더 코드 2023 다시풀기)
 //19012023
 
 public class b19012023 {
