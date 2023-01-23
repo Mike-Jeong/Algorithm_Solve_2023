@@ -17,7 +17,7 @@ public class b23012023 {
         String nInput = null;
         while ((nInput = br.readLine()) != null) {
         
-            int n = Integer.parseInt(nInput);
+            int n = Integer.parseInt(nInput.trim());
             int[] nums = new int[n];
             int[] dp = new int[n];
             List<Integer> list = new ArrayList<>();
