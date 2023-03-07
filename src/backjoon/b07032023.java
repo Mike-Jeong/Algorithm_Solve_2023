@@ -17,23 +17,23 @@ public class b07032023 {
         int n = Integer.parseInt(st.nextToken());
         int m = Integer.parseInt(st.nextToken());
 
-        Queue<Integer> queue = new PriorityQueue<>();
-
+        int[] nums = new int[n + m];
+        
         st = new StringTokenizer(br.readLine());
         for (int i = 0; i < n; i++) {
-            queue.add(Integer.parseInt(st.nextToken()));
+            nums[i] = Integer.parseInt(st.nextToken());
         }
 
         st = new StringTokenizer(br.readLine());
         for (int i = 0; i < m; i++) {
-            queue.add(Integer.parseInt(st.nextToken()));
+            nums[i + n] = Integer.parseInt(st.nextToken());
         }
 
-        while (!queue.isEmpty()) {
-            sb.append(queue.poll()).append(" ");
+        Arrays.sort(nums);
+        for (int j = 0; j < nums.length; j++) {
+            sb.append(nums[j]).append(" ");
         }
-
         System.out.println(sb);
     }
 }
-// 우선순위 큐 사용
+// Arrays.sort() 함수 사용
