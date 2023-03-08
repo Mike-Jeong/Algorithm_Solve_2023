@@ -8,8 +8,6 @@ import java.util.*;
 
 public class b08032023 {
 
-    static int[] nums;
-
     public static void main(String args[]) throws Exception {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -23,49 +21,24 @@ public class b08032023 {
             st = new StringTokenizer(br.readLine());
 
             int n = Integer.parseInt(st.nextToken());
-            nums = new int[n];
+            Set<Integer> set = new HashSet<>();
 
             st = new StringTokenizer(br.readLine());
             for (int i = 0; i < n; i++) {
-                nums[i] = Integer.parseInt(st.nextToken());
+                set.add(Integer.parseInt(st.nextToken()));
             }
-
-            Arrays.sort(nums);
 
             st = new StringTokenizer(br.readLine());
             int m = Integer.parseInt(st.nextToken());
 
             st = new StringTokenizer(br.readLine());
             for (int i = 0; i < m; i++) {
-                sb.append((check(Integer.parseInt(st.nextToken())) ? 1 : 0)).append("\n");
+                sb.append(set.contains(Integer.parseInt(st.nextToken())) ? 1 : 0).append("\n");
             }
-            
+
         }
 
         System.out.println(sb);
     }
-
-    private static boolean check(int num) {
-
-        int left = 0;
-        int right = nums.length - 1;
-
-        while (left <= right) {
-
-            int mid = (left + right) / 2;
-
-            if (nums[mid] <= num) {
-                if (nums[mid] == num) {
-                    return true;
-                }
-                left = mid + 1;
-            } else {
-                right = mid - 1;
-            }
-
-        }
-
-        return false;
-
-    }
 }
+// Set 이용
