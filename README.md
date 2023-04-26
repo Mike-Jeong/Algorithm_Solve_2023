@@ -12,3 +12,7 @@
 
 - Package 이름 : backjoon
   => https://www.acmicpc.net/
+  
+### 🐰 See My Backjoon History
+
+[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=minnz)](https://solved.ac/minnz/)
