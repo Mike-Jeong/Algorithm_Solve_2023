@@ -36,7 +36,7 @@ public class b13052023 {
 
             if (paper[current] > 0) {
 
-                for (int i = 0; i < paper[current]; i++) {
+                for (int i = 0; i < paper[current] - 1; i++) {
                     deque.offerLast(deque.pollFirst());
                 }
 
