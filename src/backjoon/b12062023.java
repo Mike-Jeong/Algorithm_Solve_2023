@@ -35,24 +35,25 @@ public class b12062023 {
         int target = 1;
         int count = 2;
 
-        while(true) {
+        while (true) {
+
             if (count == n_abs) {
-                
+
                 if (0 > n) {
                     System.out.println(n % 2 == 0 ? -1 : 1);
                 } else {
                     System.out.println(1);
                 }
-                    
+
                 System.out.println(target);
                 break;
             }
-                    
+
             first = second;
             second = target;
             target = (first + second) % 1000000000;
             count++;
-            
+
         }
     }
 
