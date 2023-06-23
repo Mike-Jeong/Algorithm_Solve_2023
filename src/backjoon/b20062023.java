@@ -3,7 +3,7 @@ package backjoon;
 import java.io.*;
 import java.util.*;
 
-//빈도 정렬
+//소가 길을 건너간 이유 3
 //20062023
 
 public class b20062023 {
@@ -27,13 +27,13 @@ public class b20062023 {
 
         Arrays.sort(cows, (o1, o2) -> {
 
-                    if (o1[0] == o2[0]) {
+            if (o1[0] == o2[0]) {
 
-                        return o1[1] - o2[1];
-                    }
+                return o1[1] - o2[1];
+            }
 
-                    return o1[0] - o2[0];
-                }
+            return o1[0] - o2[0];
+        }
 
         );
 
