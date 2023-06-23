@@ -17,7 +17,7 @@ public class b22062023 {
         int n = Integer.parseInt(st.nextToken());
 
         long sum = ((long) (n - 1) * n) / 2;
-        long totalSum = 0
+        long totalSum = 0;
 
         st = new StringTokenizer(br.readLine());
         for (int i = 0; i < n; i++) {
