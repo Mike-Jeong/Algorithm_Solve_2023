@@ -4,9 +4,9 @@ import java.io.*;
 import java.util.*;
 
 //X보다 작은 수
-//25072023
+//26072023
 
-public class b25072023 {
+public class b26072023 {
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
