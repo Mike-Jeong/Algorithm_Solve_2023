@@ -3,10 +3,10 @@ package backjoon;
 import java.io.*;
 import java.util.*;
 
-//??!
-//31072023
+//검증수
+//01082023
 
-public class b31072023 {
+public class b01082023 {
 
     public static void main(String args[]) throws Exception {
 
@@ -14,7 +14,13 @@ public class b31072023 {
         StringTokenizer st = new StringTokenizer(br.readLine());
         // StringBuilder sb = new StringBuilder();
 
-        System.out.println(st.nextToken() + "??!");
+        int sum = 0;
+        for (int i = 0; i < 5; i++) {
+            int n = Integer.parseInt(st.nextToken());
+            sum += (n * n);
+        }
+
+        System.out.println(sum % 10);
 
     }
 }
