@@ -3,7 +3,7 @@ package backjoon;
 import java.io.*;
 import java.util.*;
 
-//
+//사분면 고르기
 //20082023
 
 public class b20082023 {
