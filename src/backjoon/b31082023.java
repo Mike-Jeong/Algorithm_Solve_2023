@@ -1,12 +1,13 @@
 package backjoon;
 
 import java.io.*;
+import java.math.BigDecimal;
 import java.util.*;
 
-//초코바
-//30082023
+//A+B
+//31082023
 
-public class b30082023 {
+public class b31082023 {
 
     public static void main(String args[]) throws Exception {
 
@@ -14,12 +15,11 @@ public class b30082023 {
         StringTokenizer st = new StringTokenizer(br.readLine());
         // StringBuilder sb = new StringBuilder();
 
-        int n = Integer.parseInt(st.nextToken());
-        int m = Integer.parseInt(st.nextToken());
+        BigDecimal a = new BigDecimal(st.nextToken());
+        st = new StringTokenizer(br.readLine());
+        BigDecimal b = new BigDecimal(st.nextToken());
 
-        n *= 100;
-
-        System.out.println(n >= m ? "Yes" : "No");
+        System.out.println(a.add(b));
 
     }
 }
