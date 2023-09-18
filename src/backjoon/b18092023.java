@@ -3,10 +3,10 @@ package backjoon;
 import java.io.*;
 import java.util.*;
 
-//제리와 톰
-//17092023
+//스위트콘 가격 구하기
+//18092023
 
-public class b17092023 {
+public class b18092023 {
 
     public static void main(String args[]) throws Exception {
 
@@ -15,10 +15,7 @@ public class b17092023 {
         // StringBuilder sb = new StringBuilder();
 
         Integer n = Integer.parseInt(st.nextToken());
-        Integer m = Integer.parseInt(st.nextToken());
 
-        System.out.print(m - n);
-        System.out.print(" ");
-        System.out.print((m));
+        System.out.print((n / 11) * 10);
     }
 }
