@@ -4,7 +4,7 @@ package backjoon;
 // import java.util.*;
 
 //와이버스 부릉부릉
-//28092023
+//29092023
 
 public class b29092023 {
 
